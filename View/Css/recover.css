@@ -1,0 +1,116 @@
+* {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Wix Madefor Text', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    font-size: 56px;
+    font-weight: 700;
+    white-space: pre-line;
+    justify-content: center;
+    width: 600px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+form {
+    position: absolute;
+    display: flex;
+    top: 60%;
+    flex-direction: column;
+}
+
+form>input {
+    display: none;
+}
+
+form label {
+    position: relative;
+    margin-top: 25px;
+    right: 10%;
+    bottom: 50px;
+    
+}
+
+form label::before {
+    content: ' ';
+    border: 1px solid #116dff;
+    position: absolute;
+    width: 0.8em;
+    height: 0.8em;
+    right: 115%;
+    margin-right: -40px;
+    margin-top: 2px;
+    border-radius: 60px;
+    text-align: center;
+
+}
+
+input[type="checkbox"]:checked+label::before {
+    background-clip: content-box;
+    background-color: #116dff;
+    padding: 0.9px;
+}
+
+.logo {
+    position: absolute;
+    bottom: 90%;
+    left: 3%;
+}
+
+.logo>img {
+    width: 40%;
+}
+
+.line{
+    position: absolute;
+    width: 700px;
+    height: 0px;
+    border: 1px solid #DDDDDE;
+    top:75%;
+}
+
+form>button[type = "submit"]{
+    position: absolute;
+    width: 160px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 60px;
+    top: 85%;
+    background-color: #116dff;
+    color: #fff;
+    font-size: 15px;
+    transition: 0.3s;
+    left: 85%;
+}
+form>button[type = "submit"]:hover{
+    color: #000;
+    border: 1px solid #116dff;
+    opacity: 0.7;
+}
+
+form>button{
+    position: absolute;
+    width: 160px;
+    height: 40px;
+    border: 1px solid #116dff;
+    border-radius: 60px;
+    top: 85%;
+    background-color: transparent;
+    color: #116dff;
+    font-size: 15px;
+    transition: 0.3s;
+    left: 38%;
+}
+
+form>button:hover{
+    background-color: #116dff;
+    color: #fff;
+    border: 1px solid #116dff;
+}

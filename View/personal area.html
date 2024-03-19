@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="Css/personal area.css">
+    <link rel="icon" href="../Icons/LOGO JOSAN NUEVA VERSION.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Wix+Madefor+Text:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../Icons/JOSAN.png" alt="No funciona la imagen :(">
+        </div>
+
+        <div class="user-img">
+            <img src="../Icons/menu-2.png" alt="" id = "menu"/>
+            <div class="navigation">
+                <ul>
+                    <li>
+                        <div>
+                            <img src="../Icons/pagina-de-inicio.png" alt="">
+                            <a href="#">Inicio</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <img src="../Icons/curriculum.png" alt="">
+                            <a href="#" id="services">Servicios</a>
+                            <img src="../Icons/flecha-correcta (1).png" alt="" id="sub">
+                        </div>
+                        <ul class="submenus">
+                            <li>
+                                <a href="#">Editar Informacion Personal</a>
+                            </li>
+                            <li>
+                                <a href="#">Editar Informacion del Asistente</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Editar Tratamiento</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="notification">
+            <img src="../Icons/notificacion.png" alt="No funciona" id="campana">
+            <label for="">
+                Notificacioness
+            </label>
+        </div>
+        <input type="text" placeholder="Buscar">
+        <button class="search">
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </button>
+    </header>
+
+    <div id="img">
+        <img src="../Icons/Proyecto Recortar imagen.png" alt="">
+    </div>
+    <div class="color1">
+        <div class="color2">
+            <div class="color3"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="carrusel">
+            <img class="gallery-items items-1" src="../Icons/Registro.png" alt="">
+            <img class="gallery-items items-2" src="../Icons/Medicamentos.png" alt="">
+            <img class="gallery-items items-3" src="../Icons/Carta-notificacion.png" alt="">
+        </div>
+        <div class="constrols">
+            <button class="controsl-1" onclick="mostrarFotos(-1)">Anterior</button>
+            <button class="controls-2" onclick="mostrarFotos(1)">Siguiente</button>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/27c813ee4a.js" crossorigin="anonymous"></script>
+    <script src="../Model/JS/personal-space.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+* {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Wix Madefor Text', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 3% 0%;
+}
+
+.header>h1 {
+    font-size: 54px;
+    color: #20303c
+}
+
+.header>h5 {
+    position: absolute;
+    top: 90px;
+    color: #20303c;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.header>h5>a {
+    text-decoration: none;
+    color: #116dff;
+}
+
+.logo {
+    position: absolute;
+    bottom: 90%;
+    left: 3%;
+}
+
+.logo>img {
+    width: 40%;
+}
+
+form {
+    position: relative;
+    left: 20%;
+}
+
+.div>input {
+    width: 25%;
+    height: 20%;
+    background: none;
+    color: #000;
+    padding-top: 20px;
+    border: 0px;
+    outline: 0px;
+    border-bottom: 1px solid #DDDDDE;
+    margin-top: 50px;
+}
+
+.div>.lbl-email {
+    position: absolute;
+    font-size: 18px;
+    right: 95%;
+    color: #757575;
+    top: 33%;
+    transition: 0.25s;
+}
+
+.div>.lbl-password {
+    position: absolute;
+    font-size: 18px;
+    color: #757575;
+    top: 78%;
+    right: 85%;
+    transition: 0.25s;
+}
+
+form input:focus+.lbl-email,
+form input:valid+.lbl-email {
+    transform: translateY(-150%);
+    right: 96%;
+    font-size: 14px;
+}
+
+form input:focus+.lbl-password, form input:valid + .lbl-password {
+    transform: translateY(-150%);
+    font-size: 14px;
+    right: 88%;
+}
+
+.line {
+    position: absolute;
+    width: 0px;
+    height: 120px;
+    border: 1px solid #DDDDDE;
+    left: 30%;
+    bottom: 145px;
+}
+
+.circle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border: 1px solid #DDDDDE;
+    border-radius: 60px;
+    left: 29.82%;
+    bottom: 130px;
+}
+
+.line2 {
+    position: absolute;
+    width: 0px;
+    height: 120px;
+    border: 1px solid #DDDDDE;
+    left: 30%;
+    bottom: 22%;
+}
+
+.separator {
+    position: relative;
+    top: 85px;
+}
+
+input[type = "checkbox"]{
+    display: none;
+}
+.remember-me{
+    padding-left: 1.3rem;
+    top: 1.5rem;
+    position: relative;
+    font-size: 14px;
+}
+.remember-me::before{
+    content: ' ';
+    border: 1px solid #116dff;
+    position: absolute;
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 3px;
+    right: 85%;
+    top: 11%;
+    transition: all 0.2s;
+    transform: rotate(0deg);
+}
+
+input[type = "checkbox"]:checked + .remember-me::before{
+    border-color: #116dff;
+    color: #116dff;
+    content: '\02713';
+    position: absolute;
+    display: flex;
+    align-items: center;
+    transform: rotate(360deg);
+}
+
+.forget-email{
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 15%;
+    top:102%
+}
+.forget-email>a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.forget-email>a:hover{
+    color: #116dff;
+}
+
+.linkFace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #116dff;
+    cursor: pointer;
+    position: absolute;
+    left: 36%;
+    bottom: 50%;
+    border-radius: 60px;
+
+}
+.linkFace>a{
+    position: relative;
+    bottom: 5px;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.linkFace>a>img{
+   position: relative;
+   top:7px;
+   right: 30px;
+}
+
+.google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #116dff;
+    cursor: pointer;
+    position: absolute;
+    left: 36%;
+    bottom: 20%;
+    border-radius: 60px;
+}
+.google>a{
+    position: relative;
+    bottom: 5px;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+.google>a>img{
+   position: relative;
+   top:7px;
+   right: 40px;
+}
+
+form>button[type = "submit"]{
+    position: absolute;
+    width: 160px;
+    height: 40px;
+    border: 1px solid #116dff;
+    border-radius: 60px;
+    top: 125%;
+    background-color: transparent;
+    color: #116dff;
+    font-size: 15px;
+    transition: 0.3s;
+    right: 88%;
+}
+form>button[type = "submit"]:hover{
+    background-color: #116dff;
+    color: #fff;
+}

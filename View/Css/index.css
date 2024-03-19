@@ -1,0 +1,83 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+}
+
+img {
+    width: 70%;
+}
+h2{
+    font-size: 80px;
+}
+.logo {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    bottom: 250px;
+    margin-left: 30%;
+    border-radius: 150px 150px 150px 150px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewLogo {
+    position: absolute;
+    width: 50%;
+    height: 98vh;
+    background-color: #AED4FA;
+}
+
+svg {
+    position: relative;
+    margin-top: 60%;
+    width: 683px;
+    top: 14.2%;
+}
+
+.information {
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 10%;
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 90px;
+    right: 10px;
+}
+
+.buttons>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 30px;
+    font-size: 20px;
+    margin-right: 15px;
+    border: 1px transparent;
+    border-radius: 8px;
+    background-color: #222222;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.buttons>.Learn_more {
+    background-color: #EBEBEB;
+    width: 200px;
+    color: #222222;
+}
+
+.buttons>button:hover {
+    background-color: #2ecc71;
+    color: #222222;
+}
