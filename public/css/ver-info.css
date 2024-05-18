@@ -1,0 +1,305 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+header {
+    width: 50%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% auto;
+}
+
+.logo {
+    position: absolute;
+    right: 66.5%;
+    bottom: 93.5%;
+}
+
+.logo>img {
+    position: relative;
+    width: 22%;
+
+}
+.ul{
+    padding-left: 100px;
+    font-family:'Courier New', Courier, monospace;
+}
+.user-img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 60px;
+    margin-left: 70%;
+    background-image: url("../Icons/Joselito-animado.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+
+
+}
+
+
+
+
+#sub {
+    position: relative;
+    width: 7%;
+    margin-left: 5%;
+    bottom: 3px;
+    transition: .3s;
+}
+
+
+.navigation>ul>li {
+    margin-top: 20px;
+    
+
+}
+
+.submenus {
+    width: 200px;
+    height: 0px;
+    border-left: 2px solid #000;
+    position: relative;
+    list-style: none;
+    pointer-events: none;
+    opacity: 0;
+    font-size: 10px;
+    transition: .3s;
+    margin-left: 5px;
+}
+
+.show {
+    pointer-events: unset;
+    opacity: 1;
+    font-size: 12px;
+    height: 100px;
+    border-left: 1px solid #000;
+
+}
+
+.submenus>li {
+    position: relative;
+    margin-top: 10px;
+    right: 10px;
+    top: 20px;
+    font-size: 11px;
+
+}
+
+
+
+a {
+    position: relative;
+    text-decoration: none;
+    bottom: 5px;
+    margin-left: 15px;
+    color: #000;
+}
+
+a:hover {
+    color: #8DD2F2;
+}
+
+.user-img>img {
+
+    position: relative;
+    right: 4050%;
+    cursor: pointer;
+    width: 170%;
+    bottom: 120%;
+}
+
+.user-img>img:hover {
+    animation: rebote 0.5s alternate infinite ease-in;
+
+}
+
+@keyframes rebote {
+    From {
+
+        transform: scale(1.1);
+
+    }
+
+    To {
+        transform: scale(0.8);
+    }
+}
+
+@keyframes seguir {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(4px);
+    }
+
+}
+
+.notification {
+    position: absolute;
+    left: 80%;
+}
+
+.notification>img {
+    position: relative;
+    width: 70%;
+    cursor: pointer;
+
+}
+
+@keyframes vibrarCampana {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(5px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+}
+
+.notification>label {
+    width: 100px;
+    height: 0px;
+    border-radius: 10px;
+    border: 1px solid #757575;
+    position: absolute;
+    right: -30px;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.25s;
+    background-color: #757575;
+    color: #fff;
+
+}
+
+.notification>img:hover+label {
+    visibility: visible;
+    opacity: 1;
+    height: 30px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 65%;
+    border: 1px solid #000;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.search {
+    width: 5%;
+    height: 5vh;
+}
+
+
+#img>img {
+    width: 35%;
+    position: absolute;
+    z-index: 1;
+    top: 28%;
+    left: 60%;
+}
+
+.color1 {
+    width: 450px;
+    height: 450px;
+    border: 1px solid #96DEFF;
+    border-radius: 1000px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 67%;
+    top: 111px;
+    background-color: #96DEFF;
+
+}
+
+.color1>.color2 {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #8DD2F2;
+    border-radius: 1000px 0px 0px 0px;
+    position: relative;
+    top: 5%;
+    left: 5%;
+    background-color: #8DD2F2;
+
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    bottom: 250px;
+    right: 30px;
+}
+
+.carrusel {
+    align-items: center;
+    display: flex;
+    height: 200px;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+}
+
+
+.items-1 {
+    height: auto;
+    width: 150px;
+}
+
+.items-2 {
+    height: auto;
+    width: 150px;
+}
+
+.items-3 {
+    height: auto;
+    width: 150px;
+}
+
+.constrols {
+    display: flex;
+    justify-content: center;
+    margin: 35px;
+    height: 55px;
+    position: relative;
+    right: 7%;
+}
+
+.constrols>button {
+    width: 55px;
+    border-radius: 60px 60px 60px 60px;
+    font-size: 11px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border: 1px solid #96DEFF;
+    cursor: pointer;
+}

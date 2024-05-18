@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing up Tratamiento</title>
+    <link rel="icon" href="../Icons/LOGO JOSAN NUEVA VERSION.png">
+    <link rel="stylesheet" href="../Css/sign up-tratamiento.css">
+
+    </head>
+
+<body>
+    <header class="header">
+        <h1>Registrar Tratamiento</h1>
+    </header>
+    <div class="logo">
+        <img src="../Icons/JOSAN.png" alt="url no encontrada :">
+    </div>
+    <form action="http://localhost/proyecto/src/registrar.php" method="POST" class="form">
+        <div class="div">
+            <input type="number" required autocomplete="off" name = "id">
+            <label class="lbl-id">
+                <span class="text-id">
+                    ID del tratamiento
+                </span>
+            </label>
+        </div>
+        <!-------->
+        <div class="div">
+            <input type="text" required autocomplete="off" name = "nombre">
+            <label class="lbl">
+                <span class="text-nombre">
+                    Nombre
+                </span>
+            </label>
+        </div>
+        <!-------->
+        <div class="div">
+            <input type="date" required id = "input-date" autocomplete="off" name = "fechainit">
+            <label class="lbl-fecha">
+                <span class="text-fecha">
+                    Fecha de inicio 
+                </span>
+            </label>
+        </div>
+        <!-------->
+        <div class="div">
+            <input type="date" required id = "input2-date" autocomplete="off" name = "fechafin">
+            <label class="lbl-date">
+                <span class="text-date">
+                    Fecha final 
+                </span>
+            </label>
+        </div>
+
+        <!------->
+        <div class="div">
+            <input type="text" required autocomplete="off" name = "dosificacion">
+            <label class="lbl-dosificacion">
+                <span class="text-dosificacion">
+                    Dosificacion
+                </span>
+            </label>
+        </div>
+
+        <!---->
+
+        <div class="div">
+            <input type="text" class="" required id = "input-descripcion" autocomplete="off" name = "descripcion">
+            <label class="lbl-descripcion">
+                <span class="text-descripcion">
+                    Descripcion
+                </span>
+            </label>
+        </div>
+        <div class="line"></div>
+        <div class="circle"></div>
+        <div class="line2"></div>
+
+        <div class="linkFace">
+            <a href="https://www.google.com/?hl=es"><img src="../Icons/facebook.png" alt="">Continua con Facebook</a>
+        </div>
+        <div class="google">
+            <a href="https://www.google.com/?hl=es"><img src="../Icons/google.png" alt="">Continua con Google</a>
+        </div>
+        <button type="submit" name = "enviarTratamiento">Regístrate</button>
+    </form>
+
+</body>
+
+</html>

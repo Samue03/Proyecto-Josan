@@ -1,0 +1,97 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing up</title>
+    <link rel="icon" href="../Icons/LOGO JOSAN NUEVA VERSION.png">
+    <link rel="stylesheet" href="../Css/sign upMedico.css">
+  
+</head>
+
+<body>
+    <header class="header">
+        <h1>Registro del medico</h1>
+        <h5>¿Ya tienes una cuenta? <a href="sign in.php">Inicia sesión</a></h5>
+    </header>
+    <div class="logo">
+        <img src="../Icons/JOSAN.png" alt="url no encontrada :">
+    </div>
+    <form action="http://localhost/proyecto/src/registrar.php" method="POST" class="form" >
+        <div class="div">
+            <input type="text" required name="cedula" autocomplete="off">
+            <label class="lbl-id">
+                <span class="text-id">
+                   Ingresa tu ID de Medico
+                </span>
+            </label>
+        </div>
+          <!-------->
+          <div class="div">
+            <input type="text" required name="nombre"autocomplete="off">
+            <label class="lbl-nombre">
+                <span class="text-nombre">
+                    Nombre
+                </span>
+            </label>
+        </div>
+        <!-------->
+        <div class="div">
+            <input type="text" required name="apellido"autocomplete="off">
+            <label class="lbl">
+                <span class="text-apellido">
+                    Apellido
+                </span>
+            </label>
+        </div>
+        <!-------->
+        <div class="div">
+            <input type="email" required name="email"autocomplete="off">
+            <label class="lbl-email">
+                <span class="text-email">
+                    Email
+                </span>
+            </label>
+        </div>
+        <!-------->
+        <div class="div">
+            <input type="text" required name="edad"autocomplete="off">
+            <label class="lbl-edad" >
+                <span class="text-email">
+                    Edad
+                </span>
+            </label>
+        </div>
+           <!-------->
+           <div class="div">
+            <input type="text" required name="espe"autocomplete="off">
+            <label class="lbl-especialidad" >
+                <span class="text-email">
+                    Especialidad
+                </span>
+            </label>
+        </div>
+           <!-------->
+           <div class="div">
+            <input type="text" required name="telefono"autocomplete="off">
+            <label class="lbl-telefono" >
+                <span class="text-email">
+                    Telefono
+                </span>
+            </label>
+        </div>
+           <!-------->
+           <div class="div">
+           
+
+       
+
+       
+        <button type="submit" name="enviarMedico">Regístrate</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing up Paciente</title>
+    <link rel="icon" href="../Icons/LOGO JOSAN NUEVA VERSION.png">
+    <link rel="stylesheet" href="../Css/sign up paciente.css">
+   
+
+</head>
+
+<body>
+    <header class="header">
+        <h1>Registrar Paciente</h1>
+    </header>
+    <div class="logo">
+        <img src="../Icons/JOSAN.png" alt="url no encontrada :">
+    </div>
+    <form action="http://localhost/proyecto/src/registrar.php" method="POST" class="form">
+        <div class="div">
+            <input type="text" required autocomplete="off" name="cedula">
+            <label class="lbl-id">
+                <span class="text-id">
+                    Identificacion del paciente
+                </span>
+            </label>
+        </div>
+        <!-------->
+        <div class="div">
+            <input type="text" required autocomplete="off" name="nombre">
+            <label class="lbl">
+                <span class="text-nombre">
+                    Nombre
+                </span>
+            </label>
+        </div>
+        <!-------->
+        <div class="div">
+            <input type="text" required autocomplete="off" name="apellido">
+            <label class="lbl-apellido">
+                <span class="text-apellido">
+                    Apellido
+                </span>
+            </label>
+        </div>
+        <!-------->
+        <div class="div">
+            <input type="text" required autocomplete="off" name="email">
+            <label class="lbl-email">
+                <span class="text-email">
+                    Email
+                </span>
+            </label>
+        </div>
+        <!------->
+        <div class="div">
+            <input type="text" required autocomplete="off" name = "telefono">
+            <label class="lbl-telefono">
+                <span class="text-telefono">
+                    Telefono
+                </span>
+            </label>
+        </div>
+
+        <!---->
+        <!------->
+        <div class="div">
+            <input type="text" required autocomplete="off" name = "edad">
+            <label class="lbl-edad">
+                <span class="text-edad">
+                    Edad
+                </span>
+            </label>
+        </div>
+
+        <!---->
+
+        <div class="div">
+            <input type="date" class="datepicker" required id="input-date" autocomplete = "off" name = "fechana">
+            <label class="lbl-fecha">
+                <span class="text-fechaNacimiento">
+                    Fecha de Nacimiento
+                </span>
+            </label>
+        </div>
+        <div class="line"></div>
+        <div class="circle"></div>
+        <div class="line2"></div>
+
+        <div class="linkFace">
+            <a href="https://www.google.com/?hl=es"><img src="../Icons/facebook.png" alt="">Continua con Facebook</a>
+        </div>
+        <div class="google">
+            <a href="https://www.google.com/?hl=es"><img src="../Icons/google.png" alt="">Continua con Google</a>
+        </div>
+        <button type="submit" name = "enviar">Regístrate</button>
+    </form>
+
+    <script src="../Model/JS/sign up paciente.js"> </script>
+</body>
+
+</html>
